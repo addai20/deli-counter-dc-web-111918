@@ -14,7 +14,7 @@ def line(katz_deli)
   empty_line = "The line is currently empty."
   if katz_deli.length == 0
     puts empty_line
-    break
+    
   else
     katz_deli.each_with_index do |person, idx|
     statement += " #{idx + 1}. #{person}"
