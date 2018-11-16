@@ -14,16 +14,16 @@ def line(katz_deli)
   empty_line = "The line is currently empty."
   if katz_deli.length == 0
     puts empty_line
-    
+
   else
     katz_deli.each_with_index do |person, idx|
     statement += " #{idx + 1}. #{person}"
   end
+  
   puts statement
   end
-  
 end
 
-def take_a_number
-  
+def take_a_number(katz_deli, name)
+  katz_deli.push(name)
 end
