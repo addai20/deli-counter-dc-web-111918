@@ -27,7 +27,8 @@ end
 def take_a_number(katz_deli, name)
   if katz_deli.length == 0 
     katz_deli << name
-  else
+  elsif katz_deli.length > 0 
     katz_deli.push(name)
   end
+  puts katz_deli
 end
