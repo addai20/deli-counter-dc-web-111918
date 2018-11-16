@@ -11,7 +11,7 @@
 
 def line(katz_deli)
   statement = "The line is currently:"
-  if katz_deli.length == 0
+  if katz_deli == nil
     puts "The line is currently empty."
   end
   
