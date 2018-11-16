@@ -18,7 +18,7 @@ def line(katz_deli)
   katz_deli.each_with_index do |person, idx|
     statement += " #{idx + 1}. #{person}"
   end
-  return statement
+  puts statement
 end
 
 def take_a_number
