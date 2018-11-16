@@ -13,12 +13,13 @@ def line(katz_deli)
   statement = "The line is currently:"
   if katz_deli == nil
     puts "The line is currently empty."
-  end
-  
-  katz_deli.each_with_index do |person, idx|
+  else
+    katz_deli.each_with_index do |person, idx|
     statement += " #{idx + 1}. #{person}"
   end
   puts statement
+  end
+  
 end
 
 def take_a_number
